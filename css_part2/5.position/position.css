@@ -7,6 +7,9 @@
     width: 600px;
     height: 600px;
     background-color: lightgray;
+    position: relative;
+    top: 100px;
+    bottom: 100px;
 }
 
 .child1 {
@@ -15,14 +18,24 @@
 
 .child2 {
     background-color: yellow;
+    position: absolute;
+    right: 50%;
+    margin-right:-50px;
+    bottom: 50%;
+    margin-bottom: -50px;
 }
 
 .child3 {
     background-color: blue;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 
 .child4 {
     background-color: lime;
+    top: 0px;
+    bottom: 0px;
 }
 
 .child5 {
@@ -31,4 +44,7 @@
 
 .child6 {
     background-color: pink;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
