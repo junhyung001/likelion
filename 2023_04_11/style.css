@@ -1,0 +1,13 @@
+*{
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+    font-size: large;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
