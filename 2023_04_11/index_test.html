@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +13,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <!-- font awsome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
+
 <body>
     <header>
         <h1>HTML 연습</h1>
         <p>멋쟁이사자처럼과 함께 HTML을 배워보자</p>
-        <ul>
+        <!-- <ul>
             <li>연습</li>
             <li>연습</li>
             <li>연습</li>
-        </ul>
+        </ul> -->
     </header>
-    <main>
-        <section>
+    <nav>
+        <div class="nav_container container">
+            <!-- 제목 추가 -->
+            <p><a href="#">LIKELION</a></p>
+
+            <!-- 메뉴 리스트로 나열  -->
+            <ul id="menu">
+                <li><a href="#top">시작</a></li>
+                <li><a href="#middle">중간</a></li>
+                <li><a href="#bottom">끝</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="grid-container">
+        <main>
+            <!-- <section>
             <form>
                 <fieldset>
                     <legend>정보입력</legend>
@@ -80,41 +97,45 @@
                     </table>
                 </fieldset>
             </form>
-        </section>
-        <section>
-            <h3>사진구경</h3>
-            <article>
-                <img src="https://placeimg.com/640/480/any" alt="동물">
-                <p>귀여운 동물사진</p>
-            </article>
-            <article>
-                <img src="https://placeimg.com/640/480/any" alt="풍경">
-                <p>멋진 풍경사진</p>
-            </article>
-        </section>
-    </main>
-    <aside>
-        <ol>
-            <li>
-                <h3>학교</h3>
-                <ul>
-                    <li><a href="https://www.sungkyul.ac.kr/skukr/index.do" alt="홈페이지">홈페이지</a></li>
-                    <li><a href="https://cc.sungkyul.ac.kr/login.php">사이버캠퍼스</a> </li>
-                    <li><a href="https://www.sungkyul.ac.kr/skukr/261/subview.do" alt="학교지도">학교지도</a></li>
-                    <li><a href="https://www.sungkyul.ac.kr/skukr/313/subview.do">학사일정</a></li>
-                </ul>
-            </li>
-            <li>
-                <h3>멋사</h3>
-                <ul>
-                    <li><a href="https://techit.education/">techit</a></li>
-                    <li><a href="https://likelion.notion.site/4d87d42af25e461e8b24095d61c424f9">지역그룹</a></li>
-                    <li><a href="https://www.likelion.net/">공식사이트</a></li>
-                    <li><a href="https://www.instagram.com/likelion_sku/">성결대 멋사 인스타</a></li>
-                </ul>    
-            </li>
-        </ol>
-    </aside>
+        </section> -->
+            <section>
+                <h3 id="section-title">사진구경</h3>
+                <div class="section-images">
+                    <article>
+                        <img src="./images/img1.JPG" alt="동물">
+                        <p>귀여운 동물사진</p>
+                    </article>
+                    <article>
+                        <img src="https://placeimg.com/640/480/any" alt="풍경">
+                        <p>멋진 풍경사진</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <ol>
+                <li class="big-list">
+                    <h3>학교</h3>
+                    <ul class="sub-list">
+                        <li><a href="https://www.sungkyul.ac.kr/index_intro_work.html">홈페이지</a></li>
+                        <li><a href="https://cc.sungkyul.ac.kr/">사이버캠퍼스</a></li>
+                        <li><a href="https://www.sungkyul.ac.kr/skukr/261/subview.do#none">학교지도</a></li>
+                        <li><a href="https://www.sungkyul.ac.kr/skukr/313/subview.do">학사일정</a></li>
+                    </ul>
+                </li>
+
+                <li class="big-list">
+                    <h3>멋사</h3>
+                    <ul class="sub-list">
+                        <li><a href="https://techit.education/">techit</a></li>
+                        <li><a href="https://likelion.notion.site/4d87d42af25e461e8b24095d61c424f9">지역그룹</a></li>
+                        <li><a href="https://www.likelion.net/">공식사이트</a></li>
+                        <li><a href="https://www.instagram.com/likelion_sku/">성결대 멋사 인스타</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </aside>
+    </div>
     <footer>
         <p id="bottom">
             Copyright @JunHY. All rights reserved.
@@ -123,7 +144,8 @@
         <div class="icons">
             <a href="junhyung8325@likelion.org">이메일 <i class="fas fa-envelope"></i></a>
             <a href="https://github.com/un-known0/LikeLion">깃허브<i class="fab fa-github"></i></a>
-            </div>            
+        </div>
     </footer>
 </body>
+
 </html>
