@@ -6,8 +6,3 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
-
-.box2{
-    grid-column: 3/5;
-    grid-row: 1/3;
-}
